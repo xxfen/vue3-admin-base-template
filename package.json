@@ -1,0 +1,26 @@
+{
+  "name": "vue3_cli_default",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "2": "^3.0.0",
+    "axios": "^0.27.2",
+    "element-plus": "^2.2.6",
+    "element-ui": "^2.15.9",
+    "fast-glob": "^3.2.11",
+    "qs": "^6.10.5",
+    "vue": "^3.2.8",
+    "vue-router": "^4.0.16",
+    "vue-wechat-title": "^2.0.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.6.0",
+    "@vue/compiler-sfc": "^3.2.6",
+    "vite": "^2.5.2",
+    "vite-plugin-svg-icons": "^2.0.1"
+  }
+}
