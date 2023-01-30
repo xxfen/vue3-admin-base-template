@@ -94,6 +94,7 @@ const routes = [{
 	}
 }); */
 const router = createRouter({
+	//mode: 'hash',三张模式：hash|history|abstract，默认hash
 	history: createWebHashHistory(),
 	routes
 })
