@@ -127,9 +127,9 @@
 			that.breadcrumbList = [
 				that.$route.meta.title
 			]
-		
+
 			//菜单项层级处理，做一个面包屑集合保存
-			var mus=that.menus
+			var mus = that.menus
 			for (let i1 of mus) {
 				if (i1.submenu) {
 					for (let i2 of i1.submenu) {
@@ -182,8 +182,11 @@
 					// 当前选中tab被删除
 					if (tabName === this.mainTabsActiveName) {
 						var tab = this.mainTabs[this.mainTabs.length - 1];
-						this.$router.push(
-							{ name: tab.name, query: tab.query, params: tab.params },
+						this.$router.push({
+								name: tab.name,
+								query: tab.query,
+								params: tab.params
+							},
 							() => {
 								this.mainTabsActiveName = this.$route.name;
 							}
@@ -191,7 +194,9 @@
 					}
 				} else {
 					this.menuActiveName = '';
-					this.$router.push({ name: 'Home' });
+					this.$router.push({
+						name: 'Home'
+					});
 				}
 			},
 			resetDocumentClientHeight: function() {
@@ -249,12 +254,13 @@
 				}
 
 			},
-			mounted: function() {
-				let that = this;
-				that.resetDocumentClientHeight();
-				that.loadSiteContentViewHeight();
-			}
 		}
+		mounted: function() {
+			let that = this;
+			that.resetDocumentClientHeight();
+			that.loadSiteContentViewHeight();
+		}
+
 	}
 </script>
 
